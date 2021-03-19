@@ -1,0 +1,27 @@
+review-card { 
+    max-width: 200px;
+}
+
+mat-slider { 
+    width: 300px;
+}
+
+.mat-card { 
+    min-width: 250px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+.example-full-width {
+    width: 100%;
+}
+
+.form-parent { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

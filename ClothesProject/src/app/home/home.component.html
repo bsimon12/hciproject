@@ -1,0 +1,64 @@
+<div>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1 class="mat-display-3">Welcome to the Clothes Site Project!</h1>
+    </div>
+    <div class="form-parent">
+        <h3 class="mat-display-1">Tell us a little bit about yourself.</h3>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Age</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </form>
+        <mat-label>Salary</mat-label>
+        <mat-slider thumbLabel
+                    color="primary"
+                    [displayWith]="formatSalary"
+                    tickInterval="1000"
+                    min="1"
+                    max="100000">
+        </mat-slider>
+
+        <h3>When it comes to clothing what interests you the most?</h3>
+        <div>
+            <button mat-flat-button color="primary" style="margin-right: 10px">
+                Fashion?
+            </button>
+            Or
+            <button mat-flat-button color="warn" style="margin-left: 10px;">
+                Function?
+            </button>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 25px">
+    <h2>See what other users received</h2>
+</div>
+<mat-grid-list cols="5" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let review of reviewers" rowHeight="2:1">
+        <mat-card>
+            <mat-card-title>
+                {{review.name}}
+                <mat-icon>
+                    person
+                </mat-icon>
+            </mat-card-title>
+            <mat-card-content>
+                <mat-chip-list>
+                    <mat-chip color="primary" selected>
+                        {{review.item}}
+                    </mat-chip>
+                </mat-chip-list>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
