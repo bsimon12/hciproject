@@ -1,0 +1,106 @@
+<div style="height: 10000px">
+    <div class="flex-container">
+        <div class="flex-child">
+            <mat-card>
+                <mat-card-title>
+                    If you're going to the beach what are you wearing?
+                </mat-card-title>
+    
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="false" style="padding-right: 10px"> Flip Flops </mat-radio-button>
+                    <mat-radio-button> Sandals </mat-radio-button>
+                </mat-radio-group>
+            </mat-card>
+    
+            <mat-card>
+                <mat-card-title>
+                    If you're going for a walk and its a bit chilly, what do you prefer to wear?
+                </mat-card-title>
+    
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="false" style="padding-right: 10px"> Hoodie </mat-radio-button>
+                    <mat-radio-button> Sweater </mat-radio-button>
+                </mat-radio-group>
+            </mat-card>
+    
+            <mat-card>
+                <mat-card-title>
+                    Do you wear glasses?
+                    <mat-slide-toggle>
+                    </mat-slide-toggle>
+                </mat-card-title>
+            </mat-card>
+    
+            <mat-card>
+                <mat-card-title>
+                    On a scale from morning to night person, where would you rank yourself?
+                </mat-card-title>
+                <div>
+                   <mat-icon>
+                       wb_sunny
+                    </mat-icon> 
+                    <mat-slider></mat-slider> 
+                    <mat-icon>
+                        nights_stay
+                    </mat-icon>
+                </div>
+            </mat-card>
+        </div>
+    
+        <div class="flex-child">
+            <mat-card>
+                <mat-card-title>
+                    Name a few of your hobbies
+                </mat-card-title>
+                <mat-chip-list aria-label="Fish selection" #hobbies>
+                    <mat-chip selected>Skiing</mat-chip>
+                    <mat-chip selected>Hiking</mat-chip>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="I like..." value="">
+                    </mat-form-field>
+                </mat-chip-list>
+    
+            </mat-card>
+    
+            <mat-card>
+                <mat-card-title>
+                    Do you wear hats?
+                    <mat-slide-toggle>
+                    </mat-slide-toggle>
+                </mat-card-title>
+            </mat-card>
+    
+            <mat-card>
+                <mat-card-title>
+                    Do you enjoy going for walks when its raining outside?
+                    <mat-slide-toggle>
+                    </mat-slide-toggle>
+                </mat-card-title>
+            </mat-card>
+    
+            <mat-card>
+                <mat-card-title>
+                    Which of these can you see yourself wearing?
+                </mat-card-title>
+                <section>
+                    <mat-checkbox>
+                        Raincoat
+                    </mat-checkbox>
+                    <mat-checkbox>
+                        Red Jacket
+                    </mat-checkbox>
+                    <mat-checkbox>
+                       Parka
+                    </mat-checkbox>
+                    <mat-checkbox>
+                        Windbreaker
+                     </mat-checkbox>
+                </section>
+            </mat-card>
+        </div>
+    </div>
+    
+    <div class="progress-bar">
+        <mat-progress-bar style="height: 20px" mode="determinate" value="40"></mat-progress-bar>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-child {
+    flex: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+}  
+
+mat-card { 
+    margin: 10px;
+}
+
+.progress-bar { 
+    position: fixed;
+    bottom: 0;
+  
+    left: 0;
+    right: 0;
+}
+
+mat-checkbox { 
+    margin: 0 12px;
+}
